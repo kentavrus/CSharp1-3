@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\MainWindow.g.cs
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\App.g.cs
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13_MarkupCompile.cache
+\\Mac\Home\Desktop\CSharp13\CSharp13\bin\Debug\CSharp13.exe.config
+\\Mac\Home\Desktop\CSharp13\CSharp13\bin\Debug\CSharp13.exe
+\\Mac\Home\Desktop\CSharp13\CSharp13\bin\Debug\CSharp13.pdb
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\MainWindow.baml
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.g.resources
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.Properties.Resources.resources
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.exe
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13.pdb
+\\Mac\Home\Desktop\CSharp13\CSharp13\obj\Debug\CSharp13_MarkupCompile.lref
