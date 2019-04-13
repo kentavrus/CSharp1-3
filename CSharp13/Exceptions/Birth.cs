@@ -8,7 +8,7 @@ namespace CSharp13.Exceptions
 {
     internal class Birth : Exception
     {
-        public Birth(string val)
-            : base(val) { }
+        public Birth()
+            : base("You are not born") { }
     }
 }

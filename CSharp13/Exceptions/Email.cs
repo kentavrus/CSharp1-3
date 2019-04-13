@@ -8,7 +8,7 @@ namespace CSharp13.Exceptions
 {
     internal class Email : Exception
     {
-        public Email(string val)
-            : base(val) { }
+        public Email()
+            : base("Enter correct email") { }
     }
 }

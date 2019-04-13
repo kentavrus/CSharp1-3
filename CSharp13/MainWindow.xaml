@@ -3,23 +3,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:CSharp13"
         mc:Ignorable="d"
-        Title="Person" Height="303.024" Width="212.097">
-    <Grid Margin="0,0,539,0">
-       
-        <Label Content="First name:" HorizontalAlignment="Left" Margin="10,49,-77,0" VerticalAlignment="Top" Width="67"/>
-        <TextBox Height="23" Margin="85,49,-185,0" TextWrapping="Wrap" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
-        <Label Content="Last name:" HorizontalAlignment="Left" Margin="10,86,-77,0" VerticalAlignment="Top" Width="67"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,86,-185,0" TextWrapping="Wrap" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="100"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="10,126,-77,0" VerticalAlignment="Top" Width="67"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,130,-185,0" TextWrapping="Wrap" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="100"/>
-        <DatePicker FirstDayOfWeek="Monday" SelectedDate="{Binding DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="85,173,-185,0" VerticalAlignment="Top" Width="100"/>
-        <Label Content="Birth Date:" HorizontalAlignment="Left" Margin="10,172,-77,0" VerticalAlignment="Top" Width="67"/>
-        <Button Content="Proceed" Visibility="{Binding ButtonVisibility, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
-                 Command="{Binding ProceedCommand}" HorizontalAlignment="Left" Margin="60,233,-127,0" VerticalAlignment="Top" Width="67" Height="23"/>
-        
+        Title="Person" Height="289.357" Width="212.097">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="First name:"/>
+        <TextBox Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Height="23" Margin="4" TextWrapping="Wrap" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Last name:"/>
+        <TextBox Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Height="23"  Margin="4"  TextWrapping="Wrap" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"  Content="Email:"/>
+        <TextBox Grid.Row="5" HorizontalAlignment="Stretch"  VerticalAlignment="Center"  Height="23"  Margin="4" TextWrapping="Wrap"  Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center"  Content="Pick your birth date:"/>
+        <DatePicker Grid.Row="7"  HorizontalAlignment="Stretch" VerticalAlignment="Center"  Margin="4" SelectedDate="{Binding DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FirstDayOfWeek="Monday" />
+        <Button  Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Proceed" Visibility="{Binding ButtonVisibility, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"  Command="{Binding ProceedCommand}"/>
     </Grid>
 </Window>
+

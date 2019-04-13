@@ -26,10 +26,10 @@ namespace CSharp13
         {
             FirstName = firstname;
             LastName = lastname;
-            if (!EmailValid(email)) throw new Email("Enter correct email");
+            if (!EmailValid(email)) throw new Email();
             Email = email;
-            if (age(birth) > 135) throw new Old("People don't live too long");
-            if (age(birth) < 0) throw new Birth("You are not born");
+            if (age(birth) > 135) throw new Old();
+            if (age(birth) < 0) throw new Birth();
             DateOfBirth = birth;
             IsAdult = age(birth) > 18;
             WesternSign = westernZodiac();

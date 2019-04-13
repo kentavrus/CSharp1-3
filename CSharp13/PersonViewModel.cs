@@ -20,7 +20,6 @@ namespace CSharp13
         private string _email;
         private DateTime _dateOfBirth = DateTime.Today;
 
-        private Visibility _loaderVisibility = Visibility.Hidden;
         private Visibility _buttonVisibility = Visibility.Visible;
 
         private RelayCommand<object> _submitCommand;
@@ -65,15 +64,6 @@ namespace CSharp13
             }
         }
 
-        public Visibility LoaderVisibility
-        {
-            get { return _loaderVisibility; }
-            set
-            {
-                _loaderVisibility = value;
-                OnPropertyChanged();
-            }
-        }
 
         public Visibility ButtonVisibility
         {
@@ -98,13 +88,7 @@ namespace CSharp13
 
         private async void SubmitImplementation(object obj)
         {
-            ButtonVisibility = Visibility.Hidden;
-            LoaderVisibility = Visibility.Visible;
-
-            await Task.Run(() => Thread.Sleep(200));
-
-            ButtonVisibility = Visibility.Visible;
-            LoaderVisibility = Visibility.Hidden;
+           
             try
             {
                 _person = new Person(_firstName, _lastName, _email, _dateOfBirth);

@@ -8,7 +8,7 @@ namespace CSharp13.Exceptions
 {
     internal class Old : Exception
     {
-       public Old(string val)
-            : base(val) { }
+       public Old()
+            : base("People don't live too long") { }
     }
 }
